@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karsaku - Kesehatan</title>
+
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="../assets/images/logo/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!--
+    - custom css link
+  -->
+    <link rel="stylesheet" href="../assets/css/style-prefix.css" />
+
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="overlay" data-overlay></div>
+
+    <!--
+    - MODAL
+  -->
+
+    <div class="modal" data-modal>
+      <div class="modal-close-overlay" data-modal-overlay></div>
+
+      <div class="modal-content">
+        <button class="modal-close-btn" data-modal-close>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <div class="newsletter-img">
+          <img
+            src="../assets/images/newsletter.png"
+            alt="subscribe newsletter"
+            width="400"
+            height="400"
+          />
+        </div>
+
+        <div class="newsletter">
+          <form action="#">
+            <div class="newsletter-header">
+              <h3 class="newsletter-title">Karsaku Belum Selesai!</h3>
+
+              <p class="newsletter-desc">
+                Karsaku masih tahap pengembangan. Subscribe <b>Karsaku</b> untuk
+                mendapatkan info terbaru.
+              </p>
+            </div>
+
+            <input
+              type="email"
+              name="email"
+              class="email-field"
+              placeholder="Email Address"
+              required
+            />
+
+            <button type="submit" class="btn-newsletter">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    - NOTIFICATION TOAST
+    
+  -->
+    <div class="notification-toast" data-toast>
+      <button class="toast-close-btn" data-toast-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="toast-banner">
+        <img
+          src="../assets/images/products/1.jpg"
+          alt="Rose Gold Earrings"
+          width="80"
+          height="70"
+        />
+      </div>
+
+      <div class="toast-detail">
+        <p class="toast-message">Seseorang baru saja membeli</p>
+
+        <p class="toast-title">Teh Tubruk</p>
+
+        <p class="toast-meta"><time datetime="PT3M">3 menit</time> lalu</p>
+      </div>
+    </div>
+    <!--
+    - HEADER
+  -->
+
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <ul class="header-social-container">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+
+          <div class="header-alert-news">
+            <p>
+              <b>Gratis Ongkir</b>
+              Natal dan Tahun Baru 2025
+            </p>
+          </div>
+
+          <div class="header-top-actions">
+            <select name="currency">
+              <option value="usd">IDR</option>
+            </select>
+
+            <select name="language">
+              <option value="en-US">Bahasa Indonesia</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-main">
+        <div class="container">
+          <a href="#" class="header-logo">
+            <img
+              src="../assets/images/logo/logo.svg"
+              alt="Karsaku Logo"
+              width="120"
+              height="36"
+            />
+          </a>
+
+          <div class="header-search-container">
+            <input
+              type="search"
+              name="search"
+              class="search-field"
+              placeholder="Masukkan nama produk..."
+            />
+
+            <button class="search-btn">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div class="header-user-actions">
+            <button class="action-btn">
+              <ion-icon name="person-outline"></ion-icon>
+            </button>
+
+            <button class="action-btn">
+              <ion-icon name="heart-outline"></ion-icon>
+              <span class="count">0</span>
+            </button>
+
+            <button class="action-btn">
+              <ion-icon name="bag-handle-outline"></ion-icon>
+              <span class="count">3</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <nav class="desktop-navigation-menu">
+        <div class="container">
+          <ul class="desktop-menu-category-list">
+            <li class="menu-category">
+              <a href="../index.html" class="menu-title">Beranda</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="../index.html#product-container" class="menu-title"
+                >Kategori</a
+              >
+            </li>
+
+            <li class="menu-category">
+              <a href="../index.html#product-main" class="menu-title">Produk</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="fashion.html" class="menu-title">Fashion</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="permainan.html" class="menu-title">Permainan</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="aksesoris.html" class="menu-title">Aksesoris</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="../blog/blog.html" class="menu-title">Blog</a>
+            </li>
+
+            <li class="menu-category">
+              <a href="../games/games.html" class="menu-title">Games</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="mobile-bottom-navigation">
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <button class="action-btn">
+          <ion-icon name="bag-handle-outline"></ion-icon>
+
+          <span class="count">3</span>
+        </button>
+
+        <button class="action-btn">
+          <a href="../index.html"><ion-icon name="home-outline"></ion-icon></a>
+        </button>
+
+        <button class="action-btn">
+          <ion-icon name="heart-outline"></ion-icon>
+
+          <span class="count">0</span>
+        </button>
+
+        <button class="action-btn" data-mobile-menu-open-btn>
+          <ion-icon name="grid-outline"></ion-icon>
+        </button>
+      </div>
+
+      <nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
+        <div class="menu-top">
+          <h2 class="menu-title">Menu</h2>
+
+          <button class="menu-close-btn" data-mobile-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="mobile-menu-category-list">
+          <li class="menu-category">
+            <a href="../index.html" class="menu-title">Beranda</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="../index.html#product-main"
+              ><button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Produk</p>
+              </button></a
+            >
+          </li>
+
+          <li class="menu-category">
+            <a href="../blog/blog.htm" class="menu-title">Blog</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="../games/games.html" class="menu-title">Games</a>
+          </li>
+        </ul>
+
+        <div class="menu-bottom">
+          <ul class="menu-category-list">
+            <li class="menu-category">
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Bahasa</p>
+
+                <ion-icon
+                  name="caret-back-outline"
+                  class="caret-back"
+                ></ion-icon>
+              </button>
+
+              <ul class="submenu-category-list" data-accordion>
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">Bahasa Indonesia</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-category">
+              <button class="accordion-menu" data-accordion-btn>
+                <p class="menu-title">Mata Uang</p>
+                <ion-icon
+                  name="caret-back-outline"
+                  class="caret-back"
+                ></ion-icon>
+              </button>
+
+              <ul class="submenu-category-list" data-accordion>
+                <li class="submenu-category">
+                  <a href="#" class="submenu-title">IDR</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="menu-social-container">
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--
+    - MAIN
+  -->
+
+    <main>
+      <!--
+      - BANNER
+    -->
+
+      <!--
+      - CATEGORY
+    -->
+
+      <!--
+      - PRODUCT
+    -->
+
+      <div class="product-container" id="product-container">
+        <div class="container">
+          <!--
+          - SIDEBAR
+        -->
+
+          <div class="sidebar has-scrollbar" data-mobile-menu>
+            <div class="sidebar-category">
+              <div class="sidebar-top">
+                <h2 class="sidebar-title">Kategori</h2>
+
+                <button class="sidebar-close-btn" data-mobile-menu-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+              </div>
+
+              <ul class="sidebar-menu-category-list">
+                <li class="sidebar-menu-category">
+                  <a href="fashion.html"
+                    ><button class="sidebar-accordion-menu" data-accordion-btn>
+                      <div class="menu-title-flex">
+                        <img
+                          src="../assets/images/icons/dress.svg"
+                          alt="clothes"
+                          width="20"
+                          height="20"
+                          class="menu-title-img"
+                        />
+
+                        <p class="menu-title">Fashion</p>
+                      </div>
+                    </button></a
+                  >
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <a href="permainan.html"
+                    ><button class="sidebar-accordion-menu" data-accordion-btn>
+                      <div class="menu-title-flex">
+                        <img
+                          src="../assets/images/icons/shoes.svg"
+                          alt="footwear"
+                          class="menu-title-img"
+                          width="20"
+                          height="20"
+                        />
+
+                        <p class="menu-title">Permainan</p>
+                      </div>
+                    </button></a
+                  >
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <a href="aksesoris.html"
+                    ><button class="sidebar-accordion-menu" data-accordion-btn>
+                      <div class="menu-title-flex">
+                        <img
+                          src="../assets/images/icons/jewelry.svg"
+                          alt="clothes"
+                          class="menu-title-img"
+                          width="20"
+                          height="20"
+                        />
+
+                        <p class="menu-title">Aksesoris</p>
+                      </div>
+                    </button></a
+                  >
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <a href="kesehatan.html"
+                    ><button class="sidebar-accordion-menu" data-accordion-btn>
+                      <div class="menu-title-flex">
+                        <img
+                          src="../assets/images/icons/perfume.svg"
+                          alt="perfume"
+                          class="menu-title-img"
+                          width="20"
+                          height="20"
+                        />
+
+                        <p class="menu-title">Kesehatan</p>
+                      </div>
+                    </button></a
+                  >
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <a href="makanan.html"
+                    ><button class="sidebar-accordion-menu" data-accordion-btn>
+                      <div class="menu-title-flex">
+                        <img
+                          src="../assets/images/icons/cosmetics.svg"
+                          alt="cosmetics"
+                          class="menu-title-img"
+                          width="20"
+                          height="20"
+                        />
+
+                        <p class="menu-title">Makanan</p>
+                      </div>
+                    </button></a
+                  >
+                </li>
+
+                <li class="sidebar-menu-category">
+                  <a href="buku.html"
+                    ><button class="sidebar-accordion-menu" data-accordion-btn>
+                      <div class="menu-title-flex">
+                        <img
+                          src="../assets/images/icons/bag.svg"
+                          alt="bags"
+                          class="menu-title-img"
+                          width="20"
+                          height="20"
+                        />
+
+                        <p class="menu-title">Buku</p>
+                      </div>
+                    </button></a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="product-showcase">
+              <h3 class="showcase-heading">best sellers</h3>
+
+              <div class="showcase-wrapper">
+                <div class="showcase-container">
+                  <div class="showcase">
+                    <a
+                      href="../produk/Teh_Tubruk.html"
+                      class="showcase-img-box"
+                    >
+                      <img
+                        src="../assets/images/products/1.jpg"
+                        alt="Teh Tubruk"
+                        width="75"
+                        height="75"
+                        class="showcase-img"
+                      />
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="../produk/Teh_Tubruk.html">
+                        <h4 class="showcase-title">Teh Tubruk</h4>
+                      </a>
+
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <p class="price">Rp5.000</p>
+                        <del>Rp7.000</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a
+                      href="../produk/Jamu_Khas_Solo.html"
+                      class="showcase-img-box"
+                    >
+                      <img
+                        src="../assets/images/products/2.jpg"
+                        alt="Jamu Khas Solo"
+                        class="showcase-img"
+                        width="75"
+                        height="75"
+                      />
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="../produk/Jamu_Khas_Solo.html">
+                        <h4 class="showcase-title">Jamu Khas Solo</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <p class="price">Rp11.000</p>
+                        <del>Rp15.000</del>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="showcase">
+                    <a href="../produk/Wedang.html" class="showcase-img-box">
+                      <img
+                        src="../assets/images/products/3.jpg"
+                        alt="Wedang"
+                        class="showcase-img"
+                        width="75"
+                        height="75"
+                      />
+                    </a>
+
+                    <div class="showcase-content">
+                      <a href="../produk/Wedang.html">
+                        <h4 class="showcase-title">Wedang</h4>
+                      </a>
+                      <div class="showcase-rating">
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                        <ion-icon name="star-half-outline"></ion-icon>
+                      </div>
+
+                      <div class="price-box">
+                        <p class="price">Rp3.000</p>
+                        <del>Rp5.000</del>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-box">
+            <!--
+            - PRODUCT MINIMAL
+          -->
+
+            <!--
+            - PRODUCT FEATURED
+          -->
+
+            <!--
+            - PRODUCT GRID
+          -->
+
+            <div class="product-main" id="product-main">
+              <h2 class="title">Kategori Kesehatan</h2>
+
+              <div class="product-grid">
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <a href="../produk/Teh_Tubruk.html">
+                      <img
+                        src="../assets/images/products/1.jpg"
+                        alt="Teh Tubruk
+                      "
+                        width="300"
+                        class="product-img default"
+                      />
+                      <img
+                        src="../assets/images/products/1.jpg"
+                        alt="Teh Tubruk
+                      "
+                        width="300"
+                        class="product-img hover"
+                      />
+                    </a>
+                    <div class="showcase-actions">
+                      <button class="btn-action">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Kesehatan</a>
+
+                    <a href="../produk/Teh_Tubruk.html">
+                      <h3 class="showcase-title">Teh Tubruk</h3>
+                    </a>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p class="price">Rp5.000</p>
+                      <del>Rp7.000</del>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <a href="../produk/Jamu_Khas_Solo.html">
+                      <img
+                        src="../assets/images/products/2.jpg"
+                        alt="Jamu Khas Solo"
+                        class="product-img default"
+                        width="300"
+                      />
+                      <img
+                        src="../assets/images/products/2.jpg"
+                        alt="Jamu Khas Solo"
+                        class="product-img hover"
+                        width="300"
+                      />
+                    </a>
+                    <div class="showcase-actions">
+                      <button class="btn-action">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Kesehatan</a>
+
+                    <h3>
+                      <a
+                        href="../produk/Jamu_Khas_Solo.html"
+                        class="showcase-title"
+                        >Jamu Khas Solo</a
+                      >
+                    </h3>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p class="price">Rp11.000</p>
+                      <del>Rp15.000</del>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <a href="../produk/Wedang.html">
+                      <img
+                        src="../assets/images/products/3.jpg"
+                        alt="Wedang"
+                        class="product-img default"
+                        width="300"
+                      />
+                      <img
+                        src="../assets/images/products/3.jpg"
+                        alt="Wedang"
+                        class="product-img hover"
+                        width="300"
+                      />
+                    </a>
+                    <div class="showcase-actions">
+                      <button class="btn-action">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Kesehatan</a>
+
+                    <h3>
+                      <a href="../produk/Wedang.html" class="showcase-title"
+                        >Wedang</a
+                      >
+                    </h3>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-half-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p class="price">Rp3.000</p>
+                      <del>Rp5.000</del>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <a href="../produk/Boreh_Bali.html">
+                      <img
+                        src="../assets/images/products/perfume.jpg"
+                        alt="Boreh Bali"
+                        class="product-img default"
+                        width="300"
+                      />
+                      <img
+                        src="../assets/images/products/perfume.jpg"
+                        alt="Boreh Bali"
+                        class="product-img hover"
+                        width="300"
+                      />
+                    </a>
+                    <div class="showcase-actions">
+                      <button class="btn-action">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Kesehatan</a>
+
+                    <h3>
+                      <a href="../produk/Boreh_Bali.html" class="showcase-title"
+                        >Boreh Bali</a
+                      >
+                    </h3>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p class="price">Rp55.000</p>
+                      <del>Rp70.000</del>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="showcase">
+                  <div class="showcase-banner">
+                    <a href="../produk/Minyak_Sumbawa.html">
+                      <img
+                        src="../assets/images/products/belt.jpg"
+                        alt="Minyak Sumbawa"
+                        class="product-img default"
+                        width="300"
+                      />
+                      <img
+                        src="../assets/images/products/belt.jpg"
+                        alt="Minyak Sumbawa"
+                        class="product-img hover"
+                        width="300"
+                      />
+                    </a>
+                    <div class="showcase-actions">
+                      <button class="btn-action">
+                        <ion-icon name="heart-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="eye-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="repeat-outline"></ion-icon>
+                      </button>
+
+                      <button class="btn-action">
+                        <ion-icon name="bag-add-outline"></ion-icon>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="showcase-content">
+                    <a href="#" class="showcase-category">Kesehatan</a>
+
+                    <h3>
+                      <a
+                        href="../produk/Minyak_Sumbawa.html"
+                        class="showcase-title"
+                        >Minyak Sumbawa</a
+                      >
+                    </h3>
+
+                    <div class="showcase-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p class="price">Rp68.000</p>
+                      <del>Rp85.000</del>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      - TESTIMONIALS, CTA & SERVICE
+    -->
+
+      <div>
+        <div class="container">
+          <div class="testimonials-box">
+            <!--
+            - TESTIMONIALS
+          -->
+
+            <div class="testimonial">
+              <h2 class="title">Komentar</h2>
+
+              <div class="testimonial-card">
+                <img
+                  src="../assets/images/testimonial-1.jpg"
+                  alt="alan doe"
+                  class="testimonial-banner"
+                  width="80"
+                  height="80"
+                />
+
+                <p class="testimonial-name">Anonim</p>
+
+                <p class="testimonial-title">Penulis</p>
+
+                <img
+                  src="../assets/images/icons/quotes.svg"
+                  alt="quotation"
+                  class="quotation-img"
+                  width="26"
+                />
+
+                <p class="testimonial-desc">
+                  Semoga dengan adanya Karsaku dapat membantu masyarakat dalam
+                  melestarikan budaya Indonesia.
+                </p>
+              </div>
+            </div>
+
+            <!--
+            - CTA
+          -->
+
+            <div class="cta-container">
+              <img
+                src="../assets/images/cta-banner.jpg"
+                alt="summer collection"
+                class="cta-banner"
+              />
+
+              <a href="#product-main" class="cta-content">
+                <p class="discount">20% Diskon</p>
+
+                <h2 class="cta-title">Natal & Tahun Baru</h2>
+
+                <p class="cta-text">Mulai dari Rp2.000</p>
+
+                <button class="cta-btn">Beli Sekarang</button>
+              </a>
+            </div>
+
+            <!--
+            - SERVICE
+          -->
+
+            <div class="service">
+              <h2 class="title">Pelayanan</h2>
+
+              <div class="service-container">
+                <a href="#" class="service-item">
+                  <div class="service-icon">
+                    <ion-icon name="boat-outline"></ion-icon>
+                  </div>
+
+                  <div class="service-content">
+                    <h3 class="service-title">Gratis Ongkir</h3>
+                    <p class="service-desc">Gratis Ongkir Se Indonesia</p>
+                  </div>
+                </a>
+
+                <a href="#" class="service-item">
+                  <div class="service-icon">
+                    <ion-icon name="rocket-outline"></ion-icon>
+                  </div>
+
+                  <div class="service-content">
+                    <h3 class="service-title">Cepat Kilat</h3>
+                    <p class="service-desc">Pengiriman Cepat</p>
+                  </div>
+                </a>
+
+                <a href="#" class="service-item">
+                  <div class="service-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                  </div>
+
+                  <div class="service-content">
+                    <h3 class="service-title">Online Support Terbaik</h3>
+                    <p class="service-desc">Pukul: 08.00 WIB - 22.00 WIB</p>
+                  </div>
+                </a>
+
+                <a href="#" class="service-item">
+                  <div class="service-icon">
+                    <ion-icon name="arrow-undo-outline"></ion-icon>
+                  </div>
+
+                  <div class="service-content">
+                    <h3 class="service-title">Pengembalian</h3>
+                    <p class="service-desc">Pengembalian Mudah</p>
+                  </div>
+                </a>
+
+                <a href="#" class="service-item">
+                  <div class="service-icon">
+                    <ion-icon name="ticket-outline"></ion-icon>
+                  </div>
+
+                  <div class="service-content">
+                    <h3 class="service-title">Promo Menarik</h3>
+                    <p class="service-desc">Berbagai Promo Tersedia</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      - BLOG
+    -->
+
+      <div class="blog">
+        <div class="container">
+          <div class="blog-container has-scrollbar">
+            <div class="blog-card">
+              <a href="#">
+                <img
+                  src="../assets/images/blog-1.jpg"
+                  alt="Menyelami Sejarah Batik: Kain Berwarna dengan Warisan yang Tak Ternilai"
+                  width="300"
+                  class="blog-banner"
+                />
+              </a>
+
+              <div class="blog-content">
+                <a href="#" class="blog-category">Fashion</a>
+
+                <a href="#">
+                  <h3 class="blog-title">
+                    Menyelami Sejarah Batik: Kain Berwarna dengan Warisan yang
+                    Tak Ternilai
+                  </h3>
+                </a>
+
+                <p class="blog-meta">
+                  By <cite>Admin</cite> /
+                  <time datetime="2022-04-06">19 Des, 2024</time>
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <a href="#">
+                <img
+                  src="../assets/images/blog-2.jpg"
+                  alt="Gamelan: Warisan Budaya yang Mengalun Melampaui Zaman"
+                  class="blog-banner"
+                  width="300"
+                />
+              </a>
+
+              <div class="blog-content">
+                <a href="#" class="blog-category">Alat Musik</a>
+
+                <h3>
+                  <a href="#" class="blog-title"
+                    >Gamelan: Warisan Budaya yang Mengalun Melampaui Zaman</a
+                  >
+                </h3>
+
+                <p class="blog-meta">
+                  By <cite>Admin</cite> /
+                  <time datetime="2022-01-18">18 Des, 2024</time>
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <a href="#">
+                <img
+                  src="../assets/images/blog-3.jpg"
+                  alt="Rahasia di Balik Kekayaan Rasa Makanan Tradisional Indonesia"
+                  class="blog-banner"
+                  width="300"
+                />
+              </a>
+
+              <div class="blog-content">
+                <a href="#" class="blog-category">Makanan</a>
+
+                <h3>
+                  <a href="#" class="blog-title"
+                    >Rahasia di Balik Kekayaan Rasa Makanan Tradisional
+                    Indonesia</a
+                  >
+                </h3>
+
+                <p class="blog-meta">
+                  By <cite>Admin</cite> /
+                  <time datetime="2022-02-10">18 Des, 2024</time>
+                </p>
+              </div>
+            </div>
+
+            <div class="blog-card">
+              <a href="#">
+                <img
+                  src="../assets/images/blog-4.jpg"
+                  alt="Menyelami Sejarah dan Keindahan Tari Kecak di Bali"
+                  class="blog-banner"
+                  width="300"
+                />
+              </a>
+
+              <div class="blog-content">
+                <a href="#" class="blog-category">Tarian</a>
+
+                <h3>
+                  <a href="#" class="blog-title"
+                    >Menyelami Sejarah dan Keindahan Tari Kecak di Bali</a
+                  >
+                </h3>
+
+                <p class="blog-meta">
+                  By <cite>Admin</cite> /
+                  <time datetime="2022-03-15">17 Des, 2024</time>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--
+    - FOOTER
+  -->
+
+    <footer>
+      <div class="footer-nav">
+        <div class="container">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Kategori</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="fashion.html" class="footer-nav-link">Fashion</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="permainan.html" class="footer-nav-link">Permainan</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="aksesoris.html" class="footer-nav-link">Aksesoris</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="kesehatan.html" class="footer-nav-link">Kesehatan</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="makanan.html" class="footer-nav-link">Makanan</a>
+            </li>
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Produk</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="../index.html#trending" class="footer-nav-link"
+                >Trending</a
+              >
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="../index.html#baru" class="footer-nav-link"
+                >Produk Baru</a
+              >
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="../index.html#tradisional" class="footer-nav-link"
+                >Tradisional</a
+              >
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="../index.html#promo" class="footer-nav-link">Promo</a>
+            </li>
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Kami</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Kebijakan</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Legalitas</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Syarat dan Ketentuan</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Tentang Kami</a>
+            </li>
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Pelayanan</h2>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Pengiriman</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Promo</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Layanan Pelanggan</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Aduan</a>
+            </li>
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Kontak</h2>
+            </li>
+
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <address class="content">
+                Jl. Semoga Menang No.1, Astungkoro, Kec. Jaya, Kab. Kemenangan
+              </address>
+            </li>
+
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
+
+              <a href="tel:+607936-8058" class="footer-nav-link"
+                >(607) 936-8058</a
+              >
+            </li>
+
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <a
+                href="mailto:karsakunusantara@gmail.com"
+                class="footer-nav-link"
+                >karsakunusantara@gmail.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Follow Us</h2>
+            </li>
+
+            <li>
+              <ul class="social-link">
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <img
+            src="../assets/images/payment.png"
+            alt="payment method"
+            class="payment-img"
+          />
+
+          <p class="copyright">
+            Copyright &copy; <a href="#">Karsaku</a> all rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--
+    - custom js link
+  -->
+    <script src="../assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
